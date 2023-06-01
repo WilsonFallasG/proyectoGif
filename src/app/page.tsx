@@ -20,6 +20,7 @@ export default function Home() {
     </div>
     <div className="flex justify-center">
     <GifList />
+    
     </div>
     </div>
     </>

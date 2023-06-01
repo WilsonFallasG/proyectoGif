@@ -8,9 +8,10 @@ export const GifList = () => {
 const gifFoundList = useSelector(selectGifs);
 
 return (
-<div className="grid grid-cols-3 gap-4 justify-center">
+    
+<div data-testid="gif-list" className="grid grid-cols-3 gap-4 justify-center">
  
-{gifFoundList.map((gif: Gif) => (
+ {gifFoundList.map((gif: Gif) => (
 <GifItem key={gif.id} title={gif.title}
 gifImageUrl={gif.url} price={promotionPrice}
 />
